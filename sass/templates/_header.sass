@@ -1,0 +1,390 @@
+.header
+    z-index: 200
+    &__burger
+        width: 46px
+        height: 46px
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        background-image: url(../img/burger.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 24px
+        z-index: 5
+        display: none
+        opacity: 0
+        visibility: hidden
+    &__nav
+        height: 100%
+        padding-left: 38px
+    &__ul
+        height: 100%
+    &__li
+        height: 100%
+        display: flex
+        align-items: center
+        padding: 0 14px
+        font-weight: 400
+        &:hover
+            background-color: #F2F2F2
+        &--link
+            cursor: pointer
+        &--cat
+            cursor: default
+            span
+                width: 15px
+                height: 15px
+                background-image: url(../img/arrowBottom.png)
+                background-repeat: no-repeat
+                background-position: center
+                margin: 0 3px
+    &__bottom
+        height: 48px
+        background-color: #ffffff
+        border-bottom: 1px solid #E2E2E2
+        position: sticky
+        top: 0px
+        &__menu
+            width: 200px
+            position: absolute
+            top: 100%
+            left: 0
+            box-shadow: 0 1px 6px rgba(0, 0, 0 , 0.1)
+            &__add
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                background-color: #f5f5f5
+                transition: 0.3s
+                transform: translateX(-100%)
+                &--hover
+                    transform: none
+                &__text
+                    display: flex
+                    align-items: center
+                    padding-left: 8px
+                &__img
+                    width: 65px
+                    background-repeat: no-repeat
+                    background-position-y: center
+                    background-position-x: 28px
+                    background-size: 24px
+                    &--1
+                        background-color: #ED3B3B
+                        background-image: url(../img/video.png)
+                    &--2
+                        background-color: #039BE5
+                        background-image: url(../img/books.png)
+                    &--3
+                        background-color: #444444
+                        background-image: url(../img/fun.png)
+                &__ul
+                    list-style-type: none
+                &__li
+                    cursor: pointer
+                    &:hover
+                        & a
+                            color: #ffffff
+                    a
+                        text-decoration: none
+                        color: #555555
+                        font-size: 18px
+                        font-weight: 300
+                        line-height: 120%
+                        height: 48px
+                        display: flex
+                    &--1
+                        &:hover
+                            background-color: #ED3B3B
+                    &--2
+                        &:hover
+                            background-color: #039BE5
+                    &--3
+                        &:hover
+                            background-color: #444444
+            &__bottom
+                background-color: #EEEEEE
+                border-top: 1px solid #d9d9d9
+            &__top
+                display: flex
+                background-color: #F5F5F5
+                padding-top: 6px
+                overflow: hidden
+                transition: 0.3s
+                height: 241px
+                &--hover
+                    height: 144px
+                &__ul
+                    list-style-type: none
+                    padding-bottom: 15px
+                    &--bottom
+                        padding-top: 10px
+                        padding-bottom: 10px
+                    a
+                        text-decoration: none
+                        color: #555555
+                &__li
+                    padding: 8px 12px 8px 24px
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 120%
+                    cursor: pointer
+                    &:hover
+                        background-color: #E8E8E8
+                    &--main
+                        font-size: 18px
+                        font-weight: 300
+                    &--market
+                        font-weight: 400
+                        a
+                            color: #8d9d29 !important
+                    &--line
+                        padding: 0
+                        margin: 14px
+                        height: 1px
+                        background-color: #DCDCDC
+                    &--bottom
+                        &:hover
+                            background-color: #E1E1E1
+            &__hover
+                width: 24px
+                background-image: url(../img/arrowLeft.png)
+                background-repeat: no-repeat
+                background-position: center
+                background-color: #ffffff
+        &__sett
+            width: 55px
+            height: 30px
+            border-radius: 4px
+            border: 1px solid rgba(0,0,0,0.17)
+            transition: 0.3s
+            background-image: url(../img/settings.png)
+            background-repeat: no-repeat
+            background-position: center
+            &:hover
+                box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3)
+        &__ref
+            height: 30px
+            width: 40px
+            border-radius: 4px
+            border: 1px solid rgba(0,0,0,0.17)
+            cursor: pointer
+            transition: 0.3s
+            background-color: transparent
+            background-image: url(../img/quest.png)
+            background-repeat: no-repeat
+            background-position: center
+            margin-right: 20px
+            &:hover
+                box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3)
+        &__line
+            height: 100%
+            width: 11px
+            display: flex
+            align-items: center
+            justify-content: center
+            &__inner
+                width: 1px
+                height: 30px
+                background-color: #d6d6d6
+        &__wrap
+            &--left
+                height: 100%
+            &--right
+                padding-right: 40px
+        &__apps
+            height: 100%
+            background-color: #689F38
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            color: #ffffff
+            font-size: 18px
+            font-weight: 300
+            width: 200px
+            span
+                width: 24px
+                height: 24px
+                background-image: url(../img/squad.png)
+                background-repeat: no-repeat
+                background-position: center
+                margin-right: 21px
+    &__ul
+        list-style-type: none
+        color: #737373
+        a
+            text-decoration: none
+            color: #737373
+    &__logo
+        max-width: 183px
+        margin-right: 30px
+    &__top
+        display: flex
+        padding: 10px 30px
+        background-color: #F1F1F1
+        &__loup
+            display: none
+            width: 46px
+            height: 46px
+            background-image: url(../img/loupBlack.png)
+            background-size: 24px
+            background-repeat: no-repeat
+            background-position: center
+            &--active
+               background-image: url(../img/headerClose.png)
+        &__box
+            &__photo
+                width: 32px
+                height: 32px
+                overflow: hidden
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 50%
+                cursor: pointer
+            &__trigger
+                cursor: pointer
+                margin-right: 20px
+                display: flex
+                align-items: center
+                justify-content: center
+                &:hover
+                    rect
+                        fill: #000000
+    &__form
+        width: 650px
+        height: 28px
+        display: flex
+        align-items: center
+        justify-content: center
+        &__button
+            height: 100%
+            width: 58px
+            min-width: 58px
+            background-color: #4586F6
+            border: 1px solid transparent
+            background-image: url(../img/loup.png)
+            background-repeat: no-repeat
+            background-position: center
+
+    &__input
+        height: 100%
+        padding: 0 8px
+        font-size: 16px
+        font-weight: 400
+        border: 1px solid #CDCDCD
+        border-right: none
+        width: 100%
+        &:hover
+            border-color: #A8A8A8
+        &:focus
+            outline: none
+            border-color: #4285F4
+
+.menu
+    visibility: hidden
+    opacity: 0
+    position: fixed
+    z-index: -1
+    left: 0
+    top: 0
+    bottom: 0
+    padding-top: 49px
+    height: 100%
+    background-color: rgba(0,0,0, 0.6)
+    overflow: hidden
+    display: none
+    &--visible
+        animation-name: zIndex
+        animation-duration: 0s
+        animation-delay: 0.3s
+        animation-fill-mode: forwards
+        visibility: visible
+        opacity: 1
+        overflow: auto
+    &__dialog
+        width: 260px
+        height: 100%
+        background-color: #EEEEEE
+    &__header
+        background-color: #555555
+        width: 100%
+        height: 48px
+        padding-left: 9px
+        &__photo
+            width: 36px
+            height: 36px
+            border: 2px solid #f5f5f5
+            border-radius: 50%
+            box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.17)
+            overflow: hidden
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 3px
+        &__link
+            font-size: 18px
+            font-weight: 300
+            line-height: 140%
+            color: #f5f5f5
+            text-decoration: none
+            &--pen
+                width: 48px
+                height: 100%
+                background-image: url(../img/pen.png)
+                background-repeat: no-repeat
+                background-position: center
+                background-size: 16px
+    &__top
+        width: 100%
+        background-color: #ffffff
+        padding: 15px 0
+        list-style-type: none
+        &__li
+            width: 100%
+            &__img
+                width: 30px
+                height: 30px
+                background-repeat: no-repeat
+                background-position: center
+                background-size: contain
+                display: block
+                margin-right: 5px
+                &--1
+                    background-image: url(../img/squadM.png)
+                &--2
+                    background-image: url(../img/videoM.png)
+                &--3
+                    background-image: url(../img/booksM.png)
+                &--4
+                    background-image: url(../img/funM.png)
+            a
+                width: 100%
+                height: 48px
+                padding-left: 12px
+                font-size: 24px
+                color: #666
+                text-decoration: none
+                font-weight: 300
+                line-height: 140%
+                justify-content: flex-start
+    &__bottom
+        background-color: #F5F5F5
+        width: 100%
+        border-bottom: 1px solid #E3E3E3
+        list-style-type: none
+        &__li
+            width: 100%
+            a
+                display: flex
+                align-items: center
+                height: 48px
+                font-size: 20px
+                font-weight: 300
+                line-height: 140%
+                color: #666
+                text-decoration: none
+                padding-left: 47px

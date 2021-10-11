@@ -1,0 +1,81 @@
+@media screen and ( max-width: 1024px )
+    body
+        background-color: #ffffff
+    .main
+        padding-left: 0
+        background-color: #ffffff
+        &--active
+            transform: translateX(260px)
+    .menu
+        display: block
+    .header
+        border-bottom: 1px solid #AAAAAA
+        height: 49px
+        padding: 0
+        padding-left: 11px
+        background-color: #ffffff
+        position: fixed
+        left: 0
+        top: 0
+        width: 100%
+        &__burger
+            display: block
+            transition: 0.3s
+        &__form
+            width: 100%
+            position: relative
+            height: 100%
+            &__button
+                width: 46px
+                height: 46px
+                min-width: 0
+                background-color: transparent
+                background-image: url(../img/loupBlack.png)
+                background-size: 24px
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                opacity: 0
+                visibility: hidden
+                transition: 0.3s
+        &__input
+            border: none
+            font-size: 21px
+            padding: 0
+            opacity: 0
+            visibility: hidden
+            transition: 0.3s
+        &__logo
+            width: 160px
+            height: 100%
+            background-image: url(../img/logoM.png)
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            z-index: 5
+            opacity: 0
+            visibility: hidden
+            margin-right: 0
+            img
+                display: none
+        &__bottom
+            display: none
+        &__top
+            padding: 0
+            height: 100%
+            background-color: #ffffff
+            &__loup
+                display: block
+                transition: 0.3s
+            &__wrap
+                height: 100%
+                width: 100%
+            &__box
+                display: none
+
+    
