@@ -1,5 +1,6 @@
 .header
-    z-index: 200
+    z-index: 500
+    width: 100%
     &__burger
         width: 46px
         height: 46px
@@ -45,6 +46,7 @@
         border-bottom: 1px solid #E2E2E2
         position: sticky
         top: 0px
+        z-index: 200
         &__menu
             width: 200px
             position: absolute
@@ -285,25 +287,16 @@
             border-color: #4285F4
 
 .menu
-    visibility: hidden
-    opacity: 0
     position: fixed
-    z-index: -1
+    z-index: 198
     left: 0
     top: 0
-    bottom: 0
     padding-top: 49px
     height: 100%
-    background-color: rgba(0,0,0, 0.6)
-    overflow: hidden
     display: none
+    overflow: hidden
+    width: 100%
     &--visible
-        animation-name: zIndex
-        animation-duration: 0s
-        animation-delay: 0.3s
-        animation-fill-mode: forwards
-        visibility: visible
-        opacity: 1
         overflow: auto
     &__dialog
         width: 260px

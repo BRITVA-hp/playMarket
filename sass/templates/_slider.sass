@@ -1,0 +1,70 @@
+.slider
+    margin-bottom: 35px
+    &__play
+        position: absolute
+        width: 75px
+        height: 75px
+        background-image: url(../img/play.png)
+        background-position: center
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        &:hover
+            background-color: rgba(0, 0, 0, 0.7)
+            border-radius: 50%
+            
+    &__button
+        width: 38px
+        min-width: 38px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+        cursor: pointer
+        path
+            transition: 0.3s
+        &:hover
+            path
+                stroke: #333333
+        svg
+            width: 18px
+            height: 18px
+    &__row
+        height: 310px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__window
+        height: 100%
+        overflow-x: hidden
+    &__field
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &--mob
+            display: none
+            height: 100%
+    &__card
+        height: 100%
+        cursor: pointer
+        margin: 0 5px
+        position: relative
+        img
+            max-width: none
+        &:first-of-type
+            margin-left: 0
+        &:last-of-type
+            margin-right: 0
+        &--mob
+            position: relative
+            display: flex
+            align-items: center
+            margin: 0 5px
+            height: 100%
+            &:last-of-type
+                padding-right: 5px
+            img
+                max-width: none
+                max-height: 100%
+        

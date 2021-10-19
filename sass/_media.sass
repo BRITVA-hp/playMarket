@@ -1,23 +1,241 @@
+@media screen and ( max-width: 1349px )
+    .similar
+        max-width: 160px
+        &__card
+            flex-direction: column
+            height: 245px
+            width: 160px
+            &__title
+                font-size: 16px
+            &__img
+                height: 160px
+                min-height: 160px
+            &__text
+                display: none
+
+
+@media screen and ( max-width: 1159px )
+    .container
+        &-main
+            flex-direction: column
+            align-items: center
+        &-content
+            margin-bottom: 65px
+
+    .similar
+        margin: 0
+        max-width: 680px
+        &__header
+            margin-bottom: 10px
+            padding: 0 5px
+        &__box
+            display: flex
+        &__card
+            display: none
+            margin: 5px
+            &:nth-child(-n+4)
+                display: block
+                
+
+
 @media screen and ( max-width: 1024px )
     body
         background-color: #ffffff
-    .main
-        padding-left: 0
-        background-color: #ffffff
+
+    .modal
+        &-video
+            background-color: #000000
+            padding: 50px 0
+            &__dialog
+                width: 100%
+                max-width: 800px
+                height: 100%
+
+    .button
+        &__tel
+            display: block
+
+    .footer
+        z-index: 199
+        background-color: #EEEEEE
+        padding: 28px 5px
         &--active
             transform: translateX(260px)
+            &::before
+                opacity: 0.7
+                visibility: visible
+
+    .similar
+        max-width: none
+        padding: 15px 10px
+        width: 100%
+        &__box
+            overflow-x: auto
+        &__card
+            display: block !important
+            min-width: 160px
+
+    .table
+        padding: 20px 15px 0
+        &__title
+            text-transform: none
+            color: #333
+            font-size: 22px
+            font-weight: 100
+            line-height: 1.4
+        &__card
+            &__title
+                line-height: 1.4
+            &__text
+                line-height: 1.4
+            &__link
+                line-height: 1.4
+
+    .news
+        padding: 15px 15px 0 15px
+        &__text
+            max-height: none !important
+        &__button
+            display: none
+        &__title
+            text-transform: none
+            font-size: 22px
+            font-weight: 100
+            color: #333
+
+    .rating
+        &--comments
+            margin-bottom: 5px
+
+    .line
+        width: 100%
+        margin: 28px 0 30px 0
+        &--last
+            margin-bottom: 0
+
+    .comments
+        padding: 15px 15px 0
+        &__review
+            &__date
+            &__rating
+                flex-wrap: wrap
+        &__top
+            font-weight: 100
+            flex-wrap: wrap
+            font-size: 22px
+            text-transform: capitalize
+            &>span
+                margin-bottom: 10px
+            &__link
+                margin-left: 10px
+        &__info
+            justify-content: flex-start
+            flex-wrap: wrap
+        &__graph
+            width: 170px
+            padding: 20px 40px 20px 10px
+
+    .description
+        padding: 0 15px
+        &__title
+            line-height: 140%
+        &__text
+            line-height: 140%
+            max-height: 143px
+
+    .slider
+        margin-bottom: 28px
+        &__window
+            overflow-x: scroll
+        &__row
+            height: 220px
+        &__field
+            display: none
+            &--mob
+                display: flex
+                
+                
+        &__button
+            display: none
+
+    .first
+        padding: 15px 10px 0 15px
+        &__number
+            font-weight: 400
+        &__advertising
+            font-weight: 400
+        &__footer
+            &__box
+                max-width: 100%
+            &__add
+                position: absolute
+                left: 0
+                top: 48px
+        &__button
+            position: absolute
+            left: 0
+            top: 0
+        &__wrap
+            margin-bottom: 16px
+            &--bottom
+                padding-top: 88px
+                position: relative
+        &__age
+            margin-top: 2px
+        &__info
+            flex-direction: column
+            &__box
+                margin-bottom: 6px
+        &__title
+            font-size: 22px
+            margin-bottom: 10px
+        &__row
+            justify-content: flex-start
+        &__img
+            width: 100px
+            height: 100px
+            min-width: 100px
+            display: none
+            margin-right: 10px
+            &--mobile
+                display: block
+
+    .container
+        &-content
+            max-width: 100%
+            padding-bottom: 30px
+            margin-bottom: 0
+        &-main
+            transition: 0.5s
+            background-color: #EEEEEE
+            align-items: flex-start
+            &--active
+                transform: translateX(260px)
+                animation: zIndex
+                animation-duration: 0s
+                animation-fill-mode: forwards
+                animation-delay: 0.5s
+                &::before
+                    visibility: visible
+                    opacity: 0.7
+
+    .main
+        padding-left: 0
+        padding-top: 0
+        padding-bottom: 0
+
     .menu
         display: block
+
     .header
         border-bottom: 1px solid #AAAAAA
         height: 49px
         padding: 0
         padding-left: 11px
         background-color: #ffffff
-        position: fixed
+        position: sticky
         left: 0
         top: 0
-        width: 100%
         &__burger
             display: block
             transition: 0.3s

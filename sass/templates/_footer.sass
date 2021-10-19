@@ -1,0 +1,31 @@
+.footer
+    padding: 28px 5px 28px 54px
+    transition: 0.5s
+    position: relative
+    &::before
+        content: ''
+        opacity: 0
+        visibility: hidden
+        transition: 0.3s
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: #000
+    &--active
+        transform: none
+
+    &__text
+        color: #555
+        font-weight: 400
+        font-size: 13px
+        line-height: 1.4
+    &__link
+        color: #15c
+        text-decoration: none
+        font-weight: 400
+        font-size: 13px
+        line-height: 1.4
+        &:hover
+            text-decoration: underline
