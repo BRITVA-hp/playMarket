@@ -373,7 +373,8 @@ video {
   font-weight: 500;
   color: #ffffff;
   transition: 0.3s;
-  display: none; }
+  display: none;
+  min-width: 238px; }
   .button__tel:hover {
     background-color: #8BC34A;
     box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.3) inset; }
@@ -1487,8 +1488,7 @@ video {
     padding: 50px 0; }
     .modal-video__dialog {
       width: 100%;
-      max-width: 800px;
-      height: 100%; }
+      max-width: 800px; }
   .button__tel {
     display: block; }
   .footer {
@@ -1714,3 +1714,8 @@ video {
         width: 100%; }
       .header__top__box {
         display: none; } }
+
+@media screen and (max-height: 500px) {
+  .modal {
+    align-items: flex-start;
+    padding-top: 50px; } }
